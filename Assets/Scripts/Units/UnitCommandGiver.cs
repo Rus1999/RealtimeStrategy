@@ -26,11 +26,11 @@ public class UnitCommandGiver : MonoBehaviour
         TryMove(hit.point);
     }
 
-    private void Trymove()
+    private void TryMove(Vector3 point)
     {
         foreach(Unit unit in unitSelectionHandler.SelectedUnits)
         {
-            unit.GetUnitMovement().
+            unit.GetUnitMovement().CmdMove(point);
         }
     }
 }
