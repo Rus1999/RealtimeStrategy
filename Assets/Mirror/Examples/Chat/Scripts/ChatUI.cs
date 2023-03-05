@@ -24,7 +24,7 @@ namespace Mirror.Examples.Chat
             connNames.Clear();
         }
 
-        public override void OnStartClient()
+        public override void OnStartAutohrity()
         {
             chatHistory.text = "";
         }

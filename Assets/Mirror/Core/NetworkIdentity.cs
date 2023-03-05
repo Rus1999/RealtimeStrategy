@@ -688,7 +688,7 @@ namespace Mirror
                 try
                 {
                     // user implemented startup
-                    comp.OnStartClient();
+                    comp.OnStartAutohrity();
                 }
                 catch (Exception e)
                 {

@@ -20,14 +20,21 @@ public class UnitSelectionHandler : MonoBehaviour
     private void Start()
     {
         mainCamera = Camera.main;
+
+        Unit.AuthorityOnUnitDespawned += AuthorityHandleUnitDespawned;
+    }
+
+    private void OnDestroy()
+    {
+        Unit.AuthorityOnUnitDespawned -= AuthorityHandleUnitDespawned;
     }
 
     private void Update()
     {
-        // if (player == null)
-        // {
+        if (player == null)
+        {
             player = NetworkClient.connection.identity.GetComponent<RTSPlayer>();
-        // }
+        }
 
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
@@ -116,5 +123,10 @@ public class UnitSelectionHandler : MonoBehaviour
                 unit.Select();
             }
         }
+    }
+
+    private void AuthorityHandleUnitDespawned(Unit unit)
+    {
+        SelectedUnits.Remove(unit);
     }
 }

@@ -5,7 +5,7 @@ namespace Mirror.Examples.NetworkRoom
     [AddComponentMenu("")]
     public class NetworkRoomPlayerExt : NetworkRoomPlayer
     {
-        public override void OnStartClient()
+        public override void OnStartAutohrity()
         {
             //Debug.Log($"OnStartClient {gameObject}");
         }

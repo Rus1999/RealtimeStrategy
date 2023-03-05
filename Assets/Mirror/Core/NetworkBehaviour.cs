@@ -1302,7 +1302,7 @@ namespace Mirror
         public virtual void OnStopServer() {}
 
         /// <summary>Like Start(), but only called on client and host.</summary>
-        public virtual void OnStartClient() {}
+        public virtual void OnStartAutohrity() {}
 
         /// <summary>Stop event, only called on client and host.</summary>
         public virtual void OnStopClient() {}

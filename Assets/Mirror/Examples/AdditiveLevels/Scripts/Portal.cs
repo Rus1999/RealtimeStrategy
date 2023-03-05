@@ -36,7 +36,7 @@ namespace Mirror.Examples.AdditiveLevels
             labelText = Regex.Replace(labelText, @"\B[A-Z0-9]+", " $0");
         }
 
-        public override void OnStartClient()
+        public override void OnStartAutohrity()
         {
             if (label.TryGetComponent(out LookAtMainCamera lookAtMainCamera))
                 lookAtMainCamera.enabled = true;
