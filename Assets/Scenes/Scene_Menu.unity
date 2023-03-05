@@ -293,14 +293,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3264253655012321470, guid: 467b05af2f0ff3b44a5bbf386c69d192, type: 3}
-      propertyPath: onlineScene
-      value: Assets/Scenes/Scene_Map_01.unity
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264253655012321470, guid: 467b05af2f0ff3b44a5bbf386c69d192, type: 3}
-      propertyPath: offlineScene
-      value: Assets/Scenes/Scene_Menu.unity
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 467b05af2f0ff3b44a5bbf386c69d192, type: 3}
 --- !u!1 &1516104850
