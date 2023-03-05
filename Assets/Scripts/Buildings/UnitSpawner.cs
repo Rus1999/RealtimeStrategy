@@ -6,10 +6,13 @@ using UnityEngine.EventSystems;
 
 public class UnitSpawner : NetworkBehaviour, IPointerClickHandler
 {
+    [SerializeField] private Health health = null;
     [SerializeField] private GameObject unitPrefab = null;
     [SerializeField] private Transform unitSpawnPoint = null;
 
     #region Server
+
+    
 
     [Command]
     private void CmdSpawnUnit()
