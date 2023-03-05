@@ -66,6 +66,7 @@ MonoBehaviour:
   - {fileID: 2121507433006559740, guid: d4a9d3bc65e1be74f9e320a2c622c77c, type: 3}
   timeInterpolationGui: 0
   unitSpawnerPrefab: {fileID: 7148713954790447667, guid: 356bea17aef604949ab088a68b2f8fa1, type: 3}
+  gameOverHandlerPrefab: {fileID: 2753056067927868962, guid: f54d2c746a7843a489a8562870eea87b, type: 3}
 --- !u!114 &3264253655012321467
 MonoBehaviour:
   m_ObjectHideFlags: 0
