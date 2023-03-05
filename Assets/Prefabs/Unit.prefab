@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 1115437040784804518}
   - component: {fileID: 8545684380375454499}
   - component: {fileID: 7077612135159738193}
+  - component: {fileID: 9202971126523437587}
   m_Layer: 0
   m_Name: Unit
   m_TagString: Untagged
@@ -209,6 +210,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   agent: {fileID: 5682094155163907148}
+  targeter: {fileID: 9202971126523437587}
 --- !u!114 &1115437040784804518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +227,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   unitMovement: {fileID: 6199502786029632917}
+  targeter: {fileID: 9202971126523437587}
   onSelected:
     m_PersistentCalls:
       m_Calls:
@@ -280,7 +283,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31d5df5270f369b41881df37220cea82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0.1
   aimAtPoint: {fileID: 4460225969447013673}
+--- !u!114 &9202971126523437587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416294432471444945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff935576563aa264d8813f95542f6e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0.1
+  target: {fileID: 0}
 --- !u!1 &3320612149540115264
 GameObject:
   m_ObjectHideFlags: 0
